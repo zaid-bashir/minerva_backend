@@ -25,7 +25,7 @@ router.get('/getAllPlaylists', (request, response, next) => {
     })
 });
 
-router.get('/getPlaylistById/id=:id', (request, response, next) => {
+router.get('/getPlaylistById/:id', (request, response, next) => {
     Playlist.findById(request.params._id).then(result => {
         console.log("Playlist By ID " + request.params._id + " Successfully Found...");
         response.status(200).json({

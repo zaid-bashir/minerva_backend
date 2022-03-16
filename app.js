@@ -39,6 +39,9 @@ app.use('/',(request,response)=> {
     response.send("<br><br><center><h1>Welcome to Rest API created By Zaid Bashir</h1></center><br><br><body style=\"background-color:white\"><center><h2>Flutter Engineer Test by Minerva Trusted Communications</h2></center></body>");
 });
 
+//fOR ANY iNVALID rOUTE
+//=====================
+
 // app.use((request, response, next) => {
 //     response.status(404).json({
 //         errorMessage: "Bad Request 404. The Resource you Want To Fetch is Not Availiable on Server"
